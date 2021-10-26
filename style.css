@@ -18,12 +18,18 @@ main {
 	flex: 1;
 }
 
-header h1 {
-	color: #6416a0;
-	text-align: center;
+#logo {
+	height: 100px;
+}
+
+h1 {
 	font-weight: bold;
-	font-size: 3em;
-	margin: 20px 0px;
+	font-size: 24pt;
+}
+
+p {
+	font-weight: normal;
+	font-size: 14pt;
 }
 
 div {
@@ -32,8 +38,11 @@ div {
 }
 
 .solid {
-	background-color: #6416a0;
 	color: #ffffff;
+	padding: 1rem 2rem;
+
+	background-color: transparent;
+	background-image: url('background-solid.svg');
 }
 
 .fill-height {
@@ -41,5 +50,9 @@ div {
 }
 
 .center {
-	align-content: center;
+	align-items: center;
+}
+
+.spaced * {
+	margin-top: 40px;
 }
