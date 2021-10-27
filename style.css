@@ -37,12 +37,30 @@ div {
 	flex-direction: column;
 }
 
+a {
+	text-decoration: none;
+}
+
 .solid {
 	color: #ffffff;
-	padding: 1rem 2rem;
+	padding: ;
 
-	background-color: transparent;
-	background-image: url('background-solid.svg');
+	height: 40px;
+
+	background-color: #6416a0;
+	background-image: url('top-left-solid.svg'), url('bottom-right-solid.svg');
+	background-position: top 0 left 0, bottom 0 right 0;
+	background-repeat: no-repeat;
+}
+
+.solid:hover {
+	color: #6416a0;
+
+	background-color: #ffffff;
+	border: #6416a0 2px solid;
+	background-image: url('top-left-solid.svg'), url('bottom-right-solid.svg');
+	background-position: top 0 left 0, bottom 0 right 0;
+	background-repeat: no-repeat;
 }
 
 .fill-height {
