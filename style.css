@@ -8,7 +8,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-family: "Source Sans Pro", sans-serif;
-	font-size: 14pt;
+	font-size: 12pt;
 }
 
 header {
@@ -20,7 +20,7 @@ main {
 }
 
 #logo {
-	height: 100px;
+	height: 84px;
 }
 
 h1 {
@@ -43,16 +43,16 @@ a {
 
 .solid {
 	color: #ffffff;
-	padding: 5px 20px;
+	padding: 0px 20px;
 
 	border: 10px solid;
-	border-image: url('button/solid.svg') 10 fill;
+	border-image: url('button/solid.svg') 11 fill;
 }
 
 .solid:hover {
 	color: #6416a0;
 
-	border-image: url('button/solid-hover.svg') 10 fill;
+	border-image: url('button/solid-hover.svg') 11 fill;
 }
 
 .fill-height {
