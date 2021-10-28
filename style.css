@@ -8,6 +8,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-family: "Source Sans Pro", sans-serif;
+	font-size: 14pt;
 }
 
 header {
@@ -29,7 +30,6 @@ h1 {
 
 p {
 	font-weight: normal;
-	font-size: 14pt;
 }
 
 div {
@@ -43,20 +43,16 @@ a {
 
 .solid {
 	color: #ffffff;
-	padding: 10px 30px;
+	padding: 5px 20px;
 
-	border-width: 10px;
-	border-image: url('button/solid.svg') 10px;
+	border: 10px solid;
+	border-image: url('button/solid.svg') 10 fill;
 }
 
 .solid:hover {
 	color: #6416a0;
 
-	background-color: #ffffff;
-	border: #6416a0 1px solid;
-	background-image: url('button/solid.svg'), url('bottom-right-solid.svg');
-	background-position: top 0 left 0, bottom 0 right 0;
-	background-repeat: no-repeat;
+	border-image: url('button/solid-hover.svg') 10 fill;
 }
 
 .fill-height {

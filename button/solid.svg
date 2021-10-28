@@ -13,7 +13,7 @@
 	<path
 	   id="bevel"
 		style="fill:#6416a0;stroke:none"
-      d="M 0,0 v 30 h 30 v -30 h -30"		
+      d="M 10,0 l 20,0 0,20 -10,10 -20,0 0,-20"		
 	/>
   </g>
 </svg>
