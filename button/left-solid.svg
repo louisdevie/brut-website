@@ -3,7 +3,7 @@
 <svg
    width="10px"
    height="40px"
-   viewBox="0 0 20 20"
+   viewBox="0 0 10 40"
    version="1.1"
    id="svg5"
    xmlns="http://www.w3.org/2000/svg"
@@ -12,8 +12,8 @@
      id="layer1">
 	<path
 	   id="bevel"
-		style="fill:#ffffff;stroke:none"
-      d="M 0,10 v -10 h 10"		
+		style="fill:#6416a0;stroke:none"
+      d="M 10,0 v 40 h -10 v -30"		
 	/>
   </g>
 </svg>

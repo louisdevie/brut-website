@@ -46,10 +46,12 @@ a {
 	padding: ;
 
 	height: 40px;
+	line-height: 40px;
 
-	background-color: #6416a0;
-	background-image: url('top-left-solid.svg'), url('bottom-right-solid.svg');
-	background-position: top 0 left 0, bottom 0 right 0;
+	background-color: transparent;
+	background-image: url('button/left-solid.svg'), url('button/middle-solid.svg');
+	background-position: top 0 left 0, top 0 left 10px;
+	background-size: 10px 40px, calc(100% - 20px) 40px;
 	background-repeat: no-repeat;
 }
 
@@ -57,7 +59,7 @@ a {
 	color: #6416a0;
 
 	background-color: #ffffff;
-	border: #6416a0 2px solid;
+	border: #6416a0 1px solid;
 	background-image: url('top-left-solid.svg'), url('bottom-right-solid.svg');
 	background-position: top 0 left 0, bottom 0 right 0;
 	background-repeat: no-repeat;
