@@ -17,17 +17,30 @@
   <g
       id="volume">
      <path
-         id="letterBFill"
+         id="letterBVolume"
          style="fill:#6416a0;stroke:#6416a0;stroke-width:2px;stroke-linecap:square;opacity:0"
          d="M 18,12 h 12 v 24 h 9 l 3,-3 v -6 l -3,-3 h -15 v -12 h 21 l 9,9 v 18 l -3,3 3,3 v 18 l -9,9 h -21 v -12 h 15 l 3,-3 v -6 l -3,-3 h -9 v 24 h -12 z">
         <animate
-            id="anim2"
-            attributeName="opacity"
-            begin="1.4s"
-            values="0;1"
-            dur="0.1s"
-            calcMode="discrete"
-            fill="freeze"/>
+           id="anim5"
+           attributeName="opacity"
+           begin="1.4s"
+           values="0;1"
+           dur="0.1s"
+           calcMode="discrete"
+           fill="freeze"/>
+     </path>
+     <path
+         id="letterRVolume"
+         style="fill:#6416a0;stroke:#6416a0;stroke-width:2px;stroke-linecap:square;opacity:0"
+         d="M 66,36 h 27 l 9,9 v 9 h -12 v -3 l -3,-3 h -6 l -3,3 v 21 h -12 z">
+        <animate
+           id="anim6"
+           attributeName="opacity"
+           begin="1.4s"
+           values="0;1"
+           dur="0.1s"
+           calcMode="discrete"
+           fill="freeze"/>
      </path>
   </g>
   <g
@@ -85,6 +98,7 @@
             fill="freeze"/>
      </path>
      <animateMotion
+         id="anim4"
          begin="1.5"
          dur="0.2s"
          fill="freeze">
