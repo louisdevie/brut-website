@@ -17,10 +17,50 @@ header {
 
 main {
 	flex: 1;
+	overflow: hidden;
 }
 
 #logo {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+#logo-img {
 	height: 84px;
+}
+
+#logo span {
+	margin-right: 24px;
+	font-size: 16pt;
+	color: #6416a0;
+}
+
+#navbar {
+	display: flex;
+	flex-direction: row;
+	padding: 0px 12px;
+}
+
+a.tab {
+	color: #000000;
+
+	padding: 3px 15px;
+	margin-right: 4px;
+
+	background-image: url('button/tab-corner.svg');
+	background-position: top 0 left 0;
+	background-repeat: no-repeat;
+}
+
+a.tab:hover {
+	background-color: #afafaf;
+}
+
+a.tab.current {
+	cursor: default;
+	background-color: #ffffff;
 }
 
 h1 {
@@ -32,9 +72,24 @@ p {
 	font-weight: normal;
 }
 
-div {
-	display: flex;
+div.layout {
+	display: none;
+	height: 100%;
 	flex-direction: column;
+
+	opacity: 0;
+	transform: translate(0px, 10px);
+	transition: opacity 0.5s, transform 0.5s;
+}
+
+div.layout.current-inter {
+	display: flex;
+}
+
+div.layout.current{
+	display: flex;
+	opacity: 1;
+	transform: none;
 }
 
 a {
@@ -53,10 +108,6 @@ a {
 	color: #6416a0;
 
 	border-image: url('button/solid-hover.svg') 11 fill;
-}
-
-.fill-height {
-	height: 100%;
 }
 
 .center {

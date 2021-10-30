@@ -6,7 +6,7 @@
 </head>
 <body>
 	<script>
-		const available_languages = [];
+		const available_languages = ['fr'];
 		var user_languages;
 		user_languages = navigator.languages;
 		if (user_languages === undefined) {
@@ -23,7 +23,9 @@
 			}
 			if (exit) break;
 		}
-		window.location.href = 'sorry.html';
+		if (!exit) {
+			window.location.href = 'sorry.html';
+		}
 	</script>
 </body>
 </html>
