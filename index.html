@@ -7,11 +7,13 @@
 <body>
 	<script>
 		const available_languages = ['fr'];
-		var user_languages;
-		user_languages = navigator.languages;
+
+		var user_languages = navigator.languages;
+
 		if (user_languages === undefined) {
 			user_languages = [navigator.language];
 		}
+
 		var exit = false;
 		for (const user of user_languages) {
 			for (const site of available_languages) {
@@ -23,8 +25,9 @@
 			}
 			if (exit) break;
 		}
+
 		if (!exit) {
-			window.location.href = 'sorry.html';
+			window.location.href = 'sorry';
 		}
 	</script>
 </body>

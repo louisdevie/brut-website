@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
 	margin: 0px;
 }
@@ -13,6 +14,9 @@ body {
 
 header {
 	background-color: #d7d7d7;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 main {
@@ -64,22 +68,36 @@ a.tab.current {
 }
 
 h1 {
-	font-weight: bold;
 	font-size: 24pt;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 20pt;
+	border-bottom: 1px solid black;
+	margin-top: 20px;
+}
+
+h3 {
+	font-size: 17pt;
+	margin-top: 16px;
 }
 
 p {
-	font-weight: normal;
+	font-size: 12pt;
 }
 
 div.layout {
 	display: none;
-	height: 100%;
+	height: calc(100% - 40px);
 	flex-direction: column;
+	overflow: scroll;
 
 	opacity: 0;
 	transform: translate(0px, 10px);
 	transition: opacity 0.5s, transform 0.5s;
+	padding: 20px;
 }
 
 div.layout.current-inter {
@@ -114,6 +132,11 @@ a {
 	align-items: center;
 }
 
-.spaced * {
-	margin-top: 40px;
+.spaced {
+	margin: 30px;
+}
+
+.content {
+	width: 100%;
+	max-width: 800px;
 }

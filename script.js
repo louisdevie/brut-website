@@ -4,10 +4,13 @@ var lastTabElement, lastSectionElement;
 
 function sectionChanged() {
 	section = window.location.hash.substr(2);
-	for (const s of SECTIONS) {
+	for (let i=0; i < SECTIONS.length; i++) {
+		let s = SECTIONS[i];
 		if (s == 'NOTFOUND') {
 			window.location.href = '#!home';
 		} else if (s == section) {
+			document.title = 'Brut : ' + TITLES[i];
+
 			if (lastTabElement !== undefined) lastTabElement.classList.remove('current');
 			lastTabElement = document.getElementById('tab-'+s);
 			lastTabElement.classList.add('current');
